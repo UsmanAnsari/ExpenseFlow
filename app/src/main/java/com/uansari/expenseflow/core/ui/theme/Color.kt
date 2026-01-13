@@ -1,4 +1,4 @@
-package com.uansari.expenseflow.ui.theme
+package com.uansari.expenseflow.core.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
