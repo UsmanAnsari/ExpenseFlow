@@ -10,7 +10,11 @@ import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
 @Preview(showSystemUi = true)
-fun SettingScreen(modifier: Modifier = Modifier) {
+fun SettingScreen(
+    modifier: Modifier = Modifier,
+    onNavigateToCategories: () -> Unit = {},
+    onNavigateToAccounts: () -> Unit = {}
+) {
     Box(
         modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center
     ) {

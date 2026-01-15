@@ -10,10 +10,9 @@ import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
 @Preview(showSystemUi = true)
-fun CategoryScreen(modifier: Modifier = Modifier) {
+fun CategoryScreen(modifier: Modifier = Modifier, onNavigateBack: () -> Unit = {}) {
     Box(
-        modifier = modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
+        modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center
     ) {
         Text("Category Screen")
     }

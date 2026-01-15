@@ -52,9 +52,13 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.material3)
+    implementation(libs.androidx.ui)
 
     implementation(libs.hilt.android)
+    implementation(libs.ui)
     ksp(libs.hilt.android.compiler)
+    implementation(libs.hilt.navigation.compose)
 
     implementation(libs.room.runtime)
     ksp(libs.room.compiler)
@@ -67,6 +71,7 @@ dependencies {
     implementation(libs.coroutines.android)
 
     implementation(libs.datastore.preferences)
+    implementation(libs.androidx.icon)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

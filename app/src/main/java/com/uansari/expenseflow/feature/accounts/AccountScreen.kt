@@ -10,10 +10,9 @@ import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
 @Preview(showSystemUi = true)
-fun AccountScreen(modifier: Modifier = Modifier) {
+fun AccountScreen(modifier: Modifier = Modifier, onNavigateBack: () -> Unit = {}) {
     Box(
-        modifier = modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
+        modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center
     ) {
         Text("Account Screen")
     }
