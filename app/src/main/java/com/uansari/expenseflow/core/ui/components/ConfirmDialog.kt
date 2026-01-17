@@ -64,11 +64,11 @@ fun DeleteTransactionDialog(
 
 @Composable
 fun DeleteCategoryDialog(
-    categoryName: String, transactionCount: Int, onConfirm: () -> Unit, onDismiss: () -> Unit
+    onConfirm: () -> Unit, onDismiss: () -> Unit
 ) {
     ConfirmDialog(
         title = "Delete Category",
-        message = "Delete \"$categoryName\"? $transactionCount transactions use this category and will become uncategorized.",
+        message = "Transactions use this category and will become uncategorized.",
         confirmText = "Delete",
         dismissText = "Cancel",
         onConfirm = onConfirm,

@@ -8,7 +8,6 @@ sealed class Routes(val route: String) {
 
     data object Settings : Routes("settings")
 
-
     data object AddTransaction : Routes("transaction/add")
 
     data object EditTransaction : Routes("transaction/edit/{transactionId}")

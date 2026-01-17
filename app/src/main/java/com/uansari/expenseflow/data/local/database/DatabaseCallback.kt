@@ -2,6 +2,7 @@ package com.uansari.expenseflow.data.local.database
 
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
+import com.uansari.expenseflow.core.util.icon
 import com.uansari.expenseflow.data.local.dao.AccountDao
 import com.uansari.expenseflow.data.local.dao.CategoryDao
 import com.uansari.expenseflow.data.local.entity.Account
@@ -29,22 +30,27 @@ class DatabaseCallback(
     private suspend fun populateDefaultAccounts() {
         val accounts = listOf(
             Account(
-                name = "Cash", type = AccountType.CASH, balance = 0.0, color = 0xFF4CAF50, // Green
-                icon = "💵", isDefault = true, createdAt = System.currentTimeMillis()
+                name = "Cash",
+                type = AccountType.CASH,
+                balance = 0.0,
+                color = 0xFF4CAF50, // Green
+                icon = AccountType.CASH.icon(),
+                isDefault = true,
+                createdAt = System.currentTimeMillis()
             ), Account(
                 name = "Bank Account",
                 type = AccountType.BANK,
                 balance = 0.0,
                 color = 0xFF2196F3, // Blue
-                icon = "🏦",
+                icon = AccountType.BANK.icon(),
                 isDefault = false,
                 createdAt = System.currentTimeMillis()
             ), Account(
                 name = "Credit Card",
-                type = AccountType.CREDIT_CARD,
+                type = AccountType.OTHER,
                 balance = 0.0,
                 color = 0xFFF44336, // Red
-                icon = "💳",
+                icon = AccountType.OTHER.icon(),
                 isDefault = false,
                 createdAt = System.currentTimeMillis()
             )

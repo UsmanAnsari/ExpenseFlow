@@ -10,7 +10,7 @@ import androidx.navigation.navArgument
 import com.uansari.expenseflow.feature.accounts.AccountScreen
 import com.uansari.expenseflow.feature.categories.CategoryScreen
 import com.uansari.expenseflow.feature.dashboard.DashboardScreen
-import com.uansari.expenseflow.feature.settings.SettingScreen
+import com.uansari.expenseflow.feature.settings.SettingsScreen
 import com.uansari.expenseflow.feature.transaction_management.TransactionManagementScreen
 import com.uansari.expenseflow.feature.transactions.TransactionsScreen
 
@@ -51,7 +51,7 @@ fun NavGraph(
         }
 
         composable(route = Routes.Settings.route) {
-            SettingScreen(onNavigateToCategories = {
+            SettingsScreen(onNavigateToCategories = {
                 navController.navigate(Routes.Categories.route)
             }, onNavigateToAccounts = {
                 navController.navigate(Routes.Accounts.route)
@@ -75,10 +75,9 @@ fun NavGraph(
                     type = NavType.LongType
                 })
         ) { backStackEntry ->
-            val transactionId = backStackEntry.arguments?.getLong("transactionId")
+            backStackEntry.arguments?.getLong("transactionId")
 
             TransactionManagementScreen(
-
                 onNavigateBack = {
                     navController.popBackStack()
                 })
