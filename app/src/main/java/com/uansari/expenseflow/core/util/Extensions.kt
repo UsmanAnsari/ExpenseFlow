@@ -11,17 +11,6 @@ fun List<TransactionDom>.groupByDate(): Map<String, List<TransactionDom>> {
 }
 
 
-fun String.toDoubleOrZero(): Double {
-    return this.replace(",", "").replace("$", "").trim().toDoubleOrNull() ?: 0.0
-}
-
-
-fun String.isValidAmount(): Boolean {
-    val amount = this.toDoubleOrZero()
-    return amount > 0
-}
-
-
 fun Long.toComposeColor(): Color {
     return Color(this)
 }

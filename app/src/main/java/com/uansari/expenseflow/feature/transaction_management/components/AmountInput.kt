@@ -47,7 +47,7 @@ fun AmountInput(
         ) {
             // Currency symbol
             Text(
-                text = "$", style = TextStyle(
+                text = "£", style = TextStyle(
                     fontSize = 36.sp,
                     fontWeight = FontWeight.Light,
                     color = MaterialTheme.colorScheme.onSurface

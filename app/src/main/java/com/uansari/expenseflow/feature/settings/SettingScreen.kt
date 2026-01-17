@@ -114,8 +114,8 @@ private fun SettingsContent(
 
             SettingsItem(
                 icon = "👨‍💻",
-                title = "Usman Ali Ansari",
-                subtitle = "Built with ❤️ using Jetpack Compose",
+                title = "Usman Ansari",
+                subtitle = "Built with ❤️ using Kotlin & Jetpack Compose",
                 showArrow = false,
                 onClick = {
                     uriHandler.openUri("https://www.linkedin.com/in/usman1ansari/")

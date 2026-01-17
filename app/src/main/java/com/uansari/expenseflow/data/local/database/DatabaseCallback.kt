@@ -46,7 +46,7 @@ class DatabaseCallback(
                 isDefault = false,
                 createdAt = System.currentTimeMillis()
             ), Account(
-                name = "Credit Card",
+                name = "Other",
                 type = AccountType.OTHER,
                 balance = 0.0,
                 color = 0xFFF44336, // Red

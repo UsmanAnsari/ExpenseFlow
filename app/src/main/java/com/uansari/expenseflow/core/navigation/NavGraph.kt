@@ -21,6 +21,10 @@ fun NavGraph(
     NavHost(
         navController = navController,
         startDestination = Routes.Dashboard.route,
+        enterTransition = NavigationAnimations.enterTransition,
+        exitTransition = NavigationAnimations.exitTransition,
+        popEnterTransition = NavigationAnimations.popEnterTransition,
+        popExitTransition = NavigationAnimations.popExitTransition,
         modifier = modifier
     ) {
 
