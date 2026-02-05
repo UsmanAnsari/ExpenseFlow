@@ -35,6 +35,10 @@ A simple Personal Expense Tracker built with **Jetpack Compose**, **Android Room
 
 ---
 
+## 🎬 [ExpenseFlow DEMO - YouTube](https://youtube.com/shorts/dnTMPW8SoZ0)
+
+---
+
 ## 🏗️ Architecture
 
 ExpenseFlow follows **Clean Architecture** with **MVVM/MVI** pattern, ensuring separation of concerns.
